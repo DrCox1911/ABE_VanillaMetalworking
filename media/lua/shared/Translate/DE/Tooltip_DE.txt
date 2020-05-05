@@ -1,0 +1,3 @@
+Tooltip_DE = {
+	Tooltip_ABE_Skill_Woodwork = "Tischlern"
+}

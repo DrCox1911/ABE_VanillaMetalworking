@@ -1,0 +1,5 @@
+name=ABE Vanilla Metalworking
+poster=poster.png
+description=Adds the vanilla metalworking options to ABE
+id=drcoxABEVanillaMetalworking
+require=bcUtils,drcoxABE
