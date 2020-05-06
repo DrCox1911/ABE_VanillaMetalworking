@@ -216,6 +216,140 @@ ABEVanillaMetalworking.Recipes = { -- {{{
 				modData = {}
 			},
 		},
+		ContextMenu_Metal_Fences = {
+			isCategory = true,
+			ContextMenu_Metal_Fence = {
+				name = "ContextMenu_Metal_Fence",
+				resultClass = "ISWoodenWall",
+				ingredients = {
+					["Base.MetalPipe"] = 1,
+					["Base.SmallSheetMetal"] = 2
+				},
+				images = {
+					MetalWelding = {
+						[0] = {
+							west = "constructedobjects_01_82", north = "constructedobjects_01_81", east = nil, south = nil
+						},
+						[6] = {
+							west = "constructedobjects_01_83", north = "constructedobjects_01_80", east = nil, south = nil
+						}
+					}
+				},
+				tools = {"Base.BlowTorch", "Base.WeldingMask", "Base.WeldingRods"},
+				primaryItem = "Base.BlowTorch",
+				secondaryItem = "Base.WeldingMask",
+				use = {["Base.BlowTorch"] = 5, ["Base.WeldingRods"] = 2},
+				requirements = { any = { MetalWelding = { level = 0, time = 30 } } },
+				gameRecipe = "Make Metal Fences",
+				data = {
+					canBeAlwaysPlaced = true,
+					renderFloorHelper = true,
+				},
+				modData = {}
+			},
+			ContextMenu_Metal_Pole_Fence = {
+				name = "ContextMenu_Metal_Pole_Fence",
+				resultClass = "ISWoodenWall",
+				ingredients = {
+					["Base.MetalPipe"] = 3
+				},
+				images = {
+					MetalWelding = {
+						[0] = {
+							west = "constructedobjects_01_62", north = "constructedobjects_01_61", east = nil, south = nil
+						}
+					}
+				},
+				tools = {"Base.BlowTorch", "Base.WeldingMask", "Base.WeldingRods"},
+				primaryItem = "Base.BlowTorch",
+				secondaryItem = "Base.WeldingMask",
+				use = {["Base.BlowTorch"] = 4, ["Base.WeldingRods"] = 2},
+				requirements = { any = { MetalWelding = { level = 0, time = 30 } } },
+				gameRecipe = "Make Metal Fences",
+				data = {
+					canBeAlwaysPlaced = true,
+					renderFloorHelper = true,
+				},
+				modData = {}
+			},
+			ContextMenu_Metal_Wired_Fence = {
+				name = "ContextMenu_Metal_Wired_Fence",
+				resultClass = "ISWoodenWall",
+				ingredients = {
+					["Base.Wire"] = 1,
+					["Base.MetalPipe"] = 2
+				},
+				images = {
+					MetalWelding = {
+						[0] = {
+							west = "fencing_01_26", north = "fencing_01_25", east = nil, south = nil
+						}
+					}
+				},
+				tools = {"Base.BlowTorch", "Base.WeldingMask", "Base.WeldingRods"},
+				primaryItem = "Base.BlowTorch",
+				secondaryItem = "Base.WeldingMask",
+				use = {["Base.BlowTorch"] = 4, ["Base.WeldingRods"] = 2},
+				requirements = { any = { MetalWelding = { level = 0, time = 30 } } },
+				gameRecipe = "Make Metal Fences",
+				data = {
+					canBeAlwaysPlaced = true,
+					renderFloorHelper = true,
+				},
+				modData = {}
+			},
+			ContextMenu_Metal_Big_Wired_Fence = {
+				name = "ContextMenu_Metal_Big_Wired_Fence",
+				resultClass = "ISWoodenWall",
+				ingredients = {
+					["Base.Wire"] = 3,
+					["Base.MetalPipe"] = 3
+				},
+				images = {
+					MetalWelding = {
+						[0] = {
+							west = "fencing_01_58", north = "fencing_01_57", east = nil, south = nil
+						}
+					}
+				},
+				tools = {"Base.BlowTorch", "Base.WeldingMask", "Base.WeldingRods"},
+				primaryItem = "Base.BlowTorch",
+				secondaryItem = "Base.WeldingMask",
+				use = {["Base.BlowTorch"] = 6, ["Base.WeldingRods"] = 3},
+				requirements = { any = { MetalWelding = { level = 0, time = 45 } } },
+				gameRecipe = "Make Metal Fences",
+				data = {
+					canBeAlwaysPlaced = true,
+					renderFloorHelper = true,
+				},
+				modData = {}
+			},
+			ContextMenu_Metal_Big_Metal_Fence = {
+				name = "ContextMenu_Metal_Big_Metal_Fence",
+				resultClass = "ISWoodenWall",
+				ingredients = {
+					["Base.MetalPipe"] = 5
+				},
+				images = {
+					MetalWelding = {
+						[0] = {
+							west = "constructedobjects_01_78", north = "constructedobjects_01_77", east = nil, south = nil
+						}
+					}
+				},
+				tools = {"Base.BlowTorch", "Base.WeldingMask", "Base.WeldingRods"},
+				primaryItem = "Base.BlowTorch",
+				secondaryItem = "Base.WeldingMask",
+				use = {["Base.BlowTorch"] = 8, ["Base.WeldingRods"] = 4},
+				requirements = { any = { MetalWelding = { level = 0, time = 60 } } },
+				gameRecipe = "Make Metal Fences",
+				data = {
+					canBeAlwaysPlaced = true,
+					renderFloorHelper = true,
+				},
+				modData = {}
+			},
+		}
 	}	
 };
 
