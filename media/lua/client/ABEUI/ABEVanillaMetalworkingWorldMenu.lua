@@ -349,6 +349,122 @@ ABEVanillaMetalworking.Recipes = { -- {{{
 				},
 				modData = {}
 			},
+		},
+		ContextMenu_Metal_Doors = {
+			isCategory = true,
+			ContextMenu_Metal_Fence_Gate = {
+				name = "ContextMenu_Metal_Fence_Gate",
+				resultClass = "ISWoodenDoor",
+				ingredients = {
+					["Base.MetalPipe"] = 3,
+					["Base.Hinge"] = 2
+				},
+				images = {
+					MetalWelding = {
+						[0] = {
+							west = "fixtures_doors_fences_01_28", north = "fixtures_doors_fences_01_29", east = "fixtures_doors_fences_01_30", south = "fixtures_doors_fences_01_31"
+						}
+					}
+				},
+				tools = {"Base.BlowTorch", "Base.WeldingMask", "Base.WeldingRods"},
+				primaryItem = "Base.BlowTorch",
+				secondaryItem = "Base.WeldingMask",
+				use = {["Base.BlowTorch"] = 7, ["Base.WeldingRods"] = 3},
+				requirements = { any = { MetalWelding = { level = 0, time = 15 } } },
+				gameRecipe = "Make Metal Fences",
+				data = {
+					canBeAlwaysPlaced = true,
+					renderFloorHelper = true,
+				},
+				modData = {}
+			},
+			ContextMenu_Metal_Big_Metal_Fence_Gate = {
+				name = "ContextMenu_Metal_Big_Metal_Fence_Gate",
+				resultClass = "ISWoodenDoor",
+				ingredients = {
+					["Base.MetalPipe"] = 5,
+					["Base.Hinge"] = 2
+				},
+				images = {
+					MetalWelding = {
+						[0] = {
+							west = "fixtures_doors_fences_01_24", north = "fixtures_doors_fences_01_25", east = "fixtures_doors_fences_01_26", south = "fixtures_doors_fences_01_27"
+						}
+					}
+				},
+				tools = {"Base.BlowTorch", "Base.WeldingMask", "Base.WeldingRods"},
+				primaryItem = "Base.BlowTorch",
+				secondaryItem = "Base.WeldingMask",
+				use = {["Base.BlowTorch"] = 8, ["Base.WeldingRods"] = 4},
+				requirements = { any = { MetalWelding = { level = 0, time = 30 } } },
+				gameRecipe = "Make Metal Fences",
+				data = {
+					canBeAlwaysPlaced = true,
+					renderFloorHelper = true,
+				},
+				modData = {}
+			},
+			ContextMenu_Metal_Big_Metal_Double_Pole_Door = {
+				name = "ContextMenu_Metal_Big_Metal_Double_Pole_Door",
+				resultClass = "ISDoubleDoor",
+				ingredients = {
+					["Base.MetalPipe"] = 10
+				},
+				images = {
+					MetalWelding = {
+						[0] = {
+							west = "fixtures_doors_fences_01_88", north = "fixtures_doors_fences_01_82", east = nil, south = nil
+						}
+					}
+				},
+				tools = {"Base.BlowTorch", "Base.WeldingMask", "Base.WeldingRods"},
+				primaryItem = "Base.BlowTorch",
+				secondaryItem = "Base.WeldingMask",
+				use = {["Base.BlowTorch"] = 8, ["Base.WeldingRods"] = 4},
+				requirements = { any = { MetalWelding = { level = 0, time = 30 } } },
+				gameRecipe = "Make Metal Fences",
+				data = {
+					canBeAlwaysPlaced = true,
+					renderFloorHelper = true,
+				},
+				modData = {
+					doubleDoor = {
+						spriteIndex = 88
+					}
+				}
+			},
+			ContextMenu_Metal_Big_Metal_Double_Metal_Door = {
+				name = "ContextMenu_Metal_Big_Metal_Double_Metal_Door",
+				resultClass = "ISDoubleDoor",
+				ingredients = {
+					["Base.MetalPipe"] = 8,
+					["Base.Wire"] = 4
+				},
+				images = {
+					MetalWelding = {
+						[0] = {
+							west = "fixtures_doors_fences_01_77", north = "fixtures_doors_fences_01_71", east = nil, south = nil
+						}
+					}
+				},
+				spriteMulti = "fixtures_doors_fences_01_",
+				spriteIndex = 72,
+				tools = {"Base.BlowTorch", "Base.WeldingMask", "Base.WeldingRods"},
+				primaryItem = "Base.BlowTorch",
+				secondaryItem = "Base.WeldingMask",
+				use = {["Base.BlowTorch"] = 8, ["Base.WeldingRods"] = 4},
+				requirements = { any = { MetalWelding = { level = 0, time = 30 } } },
+				gameRecipe = "Make Metal Fences",
+				data = {
+					canBeAlwaysPlaced = true,
+					renderFloorHelper = true,
+				},
+				modData = {
+					doubleDoor = {
+						spriteIndex = 72
+					}
+				}
+			},
 		}
 	}	
 };
